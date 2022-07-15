@@ -6,7 +6,7 @@ while (count<=index) {
         lastb = numa % 100 / 10; 
     if (numa > 1000) 
     {
-        lastb = (numa % 100 / 100) % 10;
+        lastb = (numa % 1000 / 100) % 10;
         Console.WriteLine(lastb); }
         else if (numa > 100) 
         {
