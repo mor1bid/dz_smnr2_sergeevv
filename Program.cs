@@ -1,7 +1,7 @@
 ﻿int index=999, count=0;
 while (count<=index) {
     Console.WriteLine("Введите число: ");
-    int numa = Convert.ToInt32(Console.ReadLine()), lasta = numa % 10, lastb = numa % 1000 / lasta; 
+    int numa = Convert.ToInt32(Console.ReadLine()), lasta = numa % 10, lastb = numa % 1000 * 10; 
     if (numa > 1000) 
     {
         Console.WriteLine(lastb); }
