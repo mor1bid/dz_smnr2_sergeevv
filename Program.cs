@@ -1,11 +1,4 @@
-﻿void Zadacha10()
-{
-Console.WriteLine("Hello, World!");
-}
-
-void Zadacha13()
-{
-int index=999, count=0;
+﻿int index=999, count=0;
 while (count<=index) {
     Console.WriteLine("Введите число: ");
     int numa = Convert.ToInt32(Console.ReadLine()), last = numa % 10; 
@@ -18,9 +11,3 @@ while (count<=index) {
         }
         count++;
     }
-}
-
-void Zadacha15()
-{
-Console.WriteLine("Hello, World!");
-}
