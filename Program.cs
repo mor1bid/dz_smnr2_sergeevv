@@ -11,6 +11,6 @@ while (count<=index)
     myyear++; 
     }
     myyear %= 100;
-    Console.WriteLine("Вам " + old);
+    Console.WriteLine("Вам " + myyear);
 count++;
 } 
