@@ -1,29 +1,20 @@
 ﻿int index=999, count=0;
-while (count<=index) 
-{
+while (count<=index) {
     Console.WriteLine("Введите число: ");
-    ulong numa = Convert.ToUInt64(Console.ReadLine()), 
+    int numa = Convert.ToInt32(Console.ReadLine()), 
         lasta = numa % 10, 
-        lastb = numa % 100 / 10,
-        ten = 10;
-        while (numa>=100)
+        lastb = (numa % 10000) / 1000; 
+    if (numa > 1000) 
     {
-        if (numa < 1000)
+        //lastb %= 100;
+        Console.WriteLine(lastb); }
+        else if (numa > 100) 
         {
             Console.WriteLine(lasta);
-            break;
-        }
-        else if (numa > 1000)
-        {
-            lastb %= ten;
-            Console.WriteLine(lastb);
-            ten++;
-            break;
         }
         else 
         {
-            Console.WriteLine("третьего числа нет");
+            Console.WriteLine("третьей цифры нет");
         }
+        count++;
     }
-    count++;
-}
