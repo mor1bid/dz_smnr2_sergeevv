@@ -8,9 +8,9 @@ while (count<=index)
         ten = 10;
         while (numa>=100)
     {
-        if (numa > 1000)
+        if (numa < 1000)
         {
-            Console.WriteLine(lastb);
+            Console.WriteLine(lasta);
             break;
         }
         else 
