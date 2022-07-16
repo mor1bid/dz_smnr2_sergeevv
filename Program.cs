@@ -5,7 +5,7 @@ while (count<=index)
     Console.WriteLine("Введите дату рождения: ");
     int myday = Convert.ToInt32(Console.ReadLine()), 
         mymonth = Convert.ToInt32(Console.ReadLine()),
-        myyear = Convert.ToInt32(Console.ReadLine()),
+        myyear = Convert.ToInt32(Console.ReadLine());
     while (myyear <= year) 
     {
     old++; 
