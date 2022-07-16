@@ -2,13 +2,14 @@
 while (count<=index) 
 {
     Console.WriteLine("Введите число: ");
-    int num = Convert.ToInt32(Console.ReadLine()), 
-        two = num % 100 / 10;
-        if (num<1000 && num>99) 
-        {
-        Console.WriteLine(two);
-        } 
+    int num = Convert.ToInt32(Console.ReadLine()),
+        workday = 5, 
+        holiday = 7;
+        if (num <= workday)
+        Console.WriteLine("Сегодня - рабочий день");
+        else if (num <= holiday && num > workday)
+        Console.WriteLine("Сегодня - выходной день");
         else 
-        Console.WriteLine("Число " + num + " не является трёхзначным!");
+        Console.WriteLine("Указано некорректное число. Повторите попытку.");
 count++;
 } 
