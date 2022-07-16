@@ -1,14 +1,15 @@
 ﻿int index=999, count=0;
 while (count<=index) 
 {
-    Console.WriteLine("Введите число: ");
-    int num = Convert.ToInt32(Console.ReadLine()), 
-        two = num % 100 / 10;
-        if (num<1000 && num>99) 
-        {
-        Console.WriteLine(two);
-        } 
-        else 
-        Console.WriteLine("Число " + num + " не является трёхзначным!");
+    Console.WriteLine("Введите значения сторон треугольника: ");
+    int a = Convert.ToInt32(Console.ReadLine()), 
+        b = Convert.ToInt32(Console.ReadLine()), 
+        c = Convert.ToInt32(Console.ReadLine());
+if (a == b )//&& c == b && a == c) 
+{
+Console.WriteLine("Данный треугольник abc - равнобедренный");
+}
+else
+Console.WriteLine("Данный треугольник abc - неравнобедренный");
 count++;
 } 
