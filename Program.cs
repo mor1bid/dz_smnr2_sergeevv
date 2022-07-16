@@ -13,14 +13,17 @@ while (count<=index)
             Console.WriteLine(lasta);
             break;
         }
-        else 
+        else if (numa > 1000)
         {
             lastb %= ten;
             Console.WriteLine(lastb);
             ten++;
             break;
         }
+        else 
+        {
+            Console.WriteLine("третьего числа нет");
+        }
     }
-    Console.WriteLine("третьего числа нет");
     count++;
 }
