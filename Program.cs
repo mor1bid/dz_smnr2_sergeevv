@@ -5,7 +5,7 @@ while (count<=index)
     int a = Convert.ToInt32(Console.ReadLine()), 
         b = Convert.ToInt32(Console.ReadLine()), 
         c = Convert.ToInt32(Console.ReadLine());
-if (a == b )//&& c == b && a == c) 
+if (a == b || c == b || a == c) 
 {
 Console.WriteLine("Данный треугольник abc - равнобедренный");
 }
