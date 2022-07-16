@@ -3,7 +3,7 @@ while (count<=index) {
     Console.WriteLine("Введите число: ");
     int numa = Convert.ToInt32(Console.ReadLine()), 
         lasta = numa % 10, 
-        lastb = (numa % 1000) / 10000; 
+        lastb = (numa % 10000) / 1000; 
     if (numa > 1000) 
     {
         //lastb %= 100;
