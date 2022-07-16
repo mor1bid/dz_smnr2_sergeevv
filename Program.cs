@@ -6,11 +6,7 @@ while (count<=index)
     int //myday = Convert.ToInt32(Console.ReadLine()), 
         //mymonth = Convert.ToInt32(Console.ReadLine()),
         myyear = Convert.ToInt32(Console.ReadLine());
-    while (old <= year) 
-    {
-    myyear = (myyear%100)-(year%100);
-    old++;
-    }
+    myyear = myyear-year;
     Console.WriteLine("Вам " + myyear);
 count++;
 } 
