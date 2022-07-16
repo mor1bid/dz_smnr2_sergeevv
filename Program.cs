@@ -10,13 +10,16 @@ while (count<=index)
     {
     myday = day-myday;
     mymonth = month-mymonth;
-    myyear = year-myyear; }
+    myyear = year-myyear;
+    Console.WriteLine("Вам " + myday + " дней, " 
+    + mymonth + " месяцев, " + myyear + " года.");
+    }
     else if (myday == day && mymonth == month && myyear == year) 
     {
         myyear -=1;
-        
-    Console.WriteLine("Вам " + myday + " дней, " 
-    + mymonth + " месяцев, " + myyear + " года."); }
+        Console.WriteLine("Вам " + myday + " дней, " 
+        + mymonth + " месяцев, " + myyear + " года."); 
+    }
     else 
     {
         Console.WriteLine("Введена некорректная дата"); 
