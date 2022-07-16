@@ -5,7 +5,7 @@ while (count<=index)
     int num = Convert.ToInt32(Console.ReadLine()),
         workday = 5, 
         holiday = 7;
-        if (num <= workday)
+        if (num <= workday && num > 0)
         Console.WriteLine("Сегодня - рабочий день");
         else if (num <= holiday && num > workday)
         Console.WriteLine("Сегодня - выходной день");
