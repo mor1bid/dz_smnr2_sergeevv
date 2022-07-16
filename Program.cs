@@ -18,9 +18,9 @@ while (count<=index)
             lastb %= ten;
             Console.WriteLine(lastb);
             ten++;
-            //break;
+            break;
         }
-        Console.WriteLine("третьего числа нет");
-        count++;
     }
+    Console.WriteLine("третьего числа нет");
+    count++;
 }
