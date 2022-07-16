@@ -8,8 +8,9 @@ while (count<=index)
         myyear = Convert.ToInt32(Console.ReadLine());
     while (myyear <= year) 
     {
-    old++; 
+    myyear++; 
     }
+    myyear %= 10;
     Console.WriteLine("Вам " + old);
 count++;
 } 
