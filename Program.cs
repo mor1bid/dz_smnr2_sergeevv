@@ -6,22 +6,24 @@ while (count<=index)
     int myday = Convert.ToInt32(Console.ReadLine()), 
         mymonth = Convert.ToInt32(Console.ReadLine()),
         myyear = Convert.ToInt32(Console.ReadLine());
-    if (myday <= 31 || mymonth <= 12 || myyear < year) 
+    if (myday <= 31 && mymonth <= 12 && myyear < year && 
+        myday > day && mymonth > month) 
     {
     myday = day-myday;
     mymonth = month-mymonth;
-    myyear = year-myyear;
-    //Console.WriteLine("Вам " + myday + " дней, " + mymonth + " месяцев, " + myyear + " года.");
-    } else 
+    myyear = year-myyear-1;
+    Console.WriteLine("Вам " + myday + " дней, " 
+    + mymonth + " месяцев, " + myyear + " года.");
+    } 
+    else if (myday < day && mymonth < month) 
+    {
+        myyear = year-myyear;
+        Console.WriteLine("Вам " + myday + " дней, " 
+        + mymonth + " месяцев, " + myyear + " года."); 
+    } 
+    else 
     {
         Console.WriteLine("Введена некорректная дата"); 
     }
-    
-    if (myday > day && mymonth > month) 
-    {
-        myyear -=1;
-    }
-Console.WriteLine("Вам " + myday + " дней, " 
-+ mymonth + " месяцев, " + myyear + " года."); 
 count++;
 } 
