@@ -13,7 +13,7 @@ while (count<=index)
     mymonth = mymonth-month;
     myyear = year-myyear-1;
     Console.WriteLine("Вам " + myday + " дней, " 
-    + mymonth + " месяцев, " + myyear + " года.");
+    + mymonth + " месяцев, " + myyear + " лет.");
     } 
     else if (myday <= day || mymonth <= month) 
     {
@@ -21,7 +21,7 @@ while (count<=index)
         mymonth = month-mymonth;
         myyear = year-myyear;
         Console.WriteLine("Вам " + myday + " дней, " 
-        + mymonth + " месяцев, " + myyear + " года."); 
+        + mymonth + " месяцев, " + myyear + " лет."); 
     } 
     else 
     {
