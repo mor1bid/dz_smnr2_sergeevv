@@ -1,7 +1,7 @@
 ﻿int index=999, count=0;
 while (count<=index) 
 {
-    double money = 1000, grow = 0.015, month=0;
+    double money = 1000, grow = 15, month=0;
     Console.WriteLine("Введите кол-во месяцев: ");
     double mymonth = Convert.ToInt32(Console.ReadLine());
     while (month<=mymonth) 
