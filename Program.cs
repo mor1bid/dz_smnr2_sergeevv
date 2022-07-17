@@ -11,18 +11,17 @@ while (count<=index)
     myday = day-myday;
     mymonth = month-mymonth;
     myyear = year-myyear;
-    Console.WriteLine("Вам " + myday + " дней, " 
-    + mymonth + " месяцев, " + myyear + " года.");
-    }
-    else if (myday > day && mymonth > month) 
-    {
-        myyear -=1;
-        Console.WriteLine("Вам " + myday + " дней, " 
-        + mymonth + " месяцев, " + myyear + " года."); 
-    }
-    else 
+    //Console.WriteLine("Вам " + myday + " дней, " + mymonth + " месяцев, " + myyear + " года.");
+    } else 
     {
         Console.WriteLine("Введена некорректная дата"); 
     }
+    
+    if (myday > day && mymonth > month) 
+    {
+        myyear -=1;
+    }
+Console.WriteLine("Вам " + myday + " дней, " 
++ mymonth + " месяцев, " + myyear + " года."); 
 count++;
 } 
