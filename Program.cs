@@ -9,16 +9,16 @@ while (count<=index)
     if (myday <= 31 && mymonth <= 12 && myyear <= year && 
         myday > day && mymonth > month) 
     {
-    myday = day-myday;
-    mymonth = month-mymonth;
+    myday = myday-day;
+    mymonth = mymonth-month;
     myyear = year-myyear-1;
     Console.WriteLine("Вам " + myday + " дней, " 
     + mymonth + " месяцев, " + myyear + " года.");
     } 
     else if (myday <= day && mymonth <= month) 
     {
-        myday = myday-day;
-        mymonth = mymonth-month;
+        myday = day-myday;
+        mymonth = month-mymonth;
         myyear = year-myyear;
         Console.WriteLine("Вам " + myday + " дней, " 
         + mymonth + " месяцев, " + myyear + " года."); 
