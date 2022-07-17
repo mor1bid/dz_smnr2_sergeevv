@@ -1,14 +1,17 @@
 ﻿int index=999, count=0;
 while (count<=index) 
 {
-    Console.WriteLine("Введите число: ");
-    int num = Convert.ToInt32(Console.ReadLine()), 
-        two = num % 100 / 10;
-        if (num<1000 && num>99) 
+    double money = 1000, grow = 0.015, month=0;
+    Console.WriteLine("Введите кол-во месяцев: ");
+    double mymonth = Convert.ToInt32(Console.ReadLine());
+    while (month<=mymonth) 
+    {
+        if (month % 2 == 0) 
         {
-        Console.WriteLine(two);
-        } 
-        else 
-        Console.WriteLine("Число " + num + " не является трёхзначным!");
-count++;
+            money += grow;
+        }
+        month++;
+    }
+    Console.WriteLine("Размер депозита через " + mymonth + " месяцев будет равен " + money);
+    count++;
 } 
