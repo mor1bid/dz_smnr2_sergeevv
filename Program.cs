@@ -6,7 +6,7 @@ while (count<=index)
     int myday = Convert.ToInt32(Console.ReadLine()), 
         mymonth = Convert.ToInt32(Console.ReadLine()),
         myyear = Convert.ToInt32(Console.ReadLine());
-    if (myday <= 31 && mymonth <= 12 && myyear <= year && mymonth > month) 
+    if (myday <= 31 && myday > 0 && mymonth <= 12 && mymonth > 0 && myyear <= year && mymonth > month) 
     {
     myday = myday-day;
     mymonth = mymonth-month;
